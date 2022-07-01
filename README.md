@@ -1,6 +1,25 @@
-# rust-blockchain
+# simple-rust-blockchain
 
 A very simple blockchain in Rust.
+
+# Setting up our Rust app
+
+To follow along, all you need is a recent Rust installation.
+
+First, create a new Rust project:
+
+cargo new rust-blockchain-example
+cd rust-blockchain-example
+
+(CARGO NEW FILE)
+
+We’re using libp2p as our peer-to-peer networking layer and Tokio as our underlying runtime.
+
+We’ll use the sha2 library for our sha256 hashing and the hex crate to transform the binary hashes into readable and transferable hex.
+
+Besides that, there’s really only utilities such as serde for JSON, log, and pretty_env_logger for logging, once_cell for static initialization, and chrono for timestamps.
+
+With the setup out of the way, let’s start by implementing the blockchain basics first and then, later on, putting all of it into a P2P-networked context.
 
 ## In progress
 
