@@ -1,7 +1,7 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby ts=2 sw=2 expandtab :
 
-PROJECT = "rust_blockchain"
+PROJECT = "simple-rust_blockchain"
 
 ENV['VAGRANT_NO_PARALLEL'] = 'yes'
 ENV['VAGRANT_DEFAULT_PROVIDER'] = 'docker'
@@ -20,3 +20,6 @@ Vagrant.configure(2) do |config|
     app.ssh.username = "vagrant"
   end
 end
+
+# Debugging Rust applications can be difficult, especially when users experience issues that are difficult to reproduce.
+# If you’re interested in monitoring and tracking performance of your Rust apps, automatically surfacing errors, and tracking slow network requests and load time, try LogRocket.
