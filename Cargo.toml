@@ -1,10 +1,19 @@
 [package]
 name = "rust-blockchain"
 version = "0.1.0"
-authors = ["Jean LELIEVRE <Jean.LELIEVRE@supinfo.com>"]
 authors = ["edit by Zhantai Dan. <zhantai@email.cz>
 
+[lib]
+name = "blockchainlib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "blockchain"
+path = "src/main.rs"
+
 [dependencies]
+hex = "0.3.2"
+crypto-hash = "0.3.3"
 chrono = "0.4"
 sha2 = "0.9.8"
 serde = {version = "1.0", features = ["derive"] }
